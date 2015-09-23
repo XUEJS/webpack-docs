@@ -132,23 +132,29 @@
 
 					<div class="row">
 						<div id="wiki" class="col-md-12">
-							<div class="contents"><ul><li><a href="#node-js">node.js</a></li><li><a href="#webpack">webpack</a></li><li><a href="#use-webpack-in-a-project">Use webpack in a project</a></li><li><a href="#versions">Versions</a></li><li><a href="#dev-tools">Dev Tools</a></li><li><a href="#continue-reading">Continue reading</a></li></ul></li></ul></div><h2 id="node-js"><a class="anchor" href="#node-js">&rarr;</a>node.js</h2>
+							<div class="contents"><ul><li><a href="#node-js">node.js</a></li><li><a href="#webpack">webpack</a></li><li><a href="#webpack">在项目中使用 WebPack</a></li><li><a href="#">版本</a></li><li><a href="#">开发工具</a></li><li><a href="#">继续阅读</a></li></ul></li></ul></div><h2 id="node-js"><a class="anchor" href="#node-js">&rarr;</a>node.js</h2>
 <p>Install <a href="http://nodejs.org">node.js</a>.</p>
-<p>node.js comes with a package manager called <code>npm</code>.</p>
+<p>node.js 中自带了一个叫做软件包管理器的工具 <code>npm</code>。</p>
 <h2 id="webpack"><a class="anchor" href="#webpack">&rarr;</a>webpack</h2>
-<p>webpack can be installed through <code>npm</code>:</p>
-<pre><code>$ npm install webpack -g</code></pre><p>webpack is now installed globally and the <code>webpack</code> command is available.</p>
-<h2 id="use-webpack-in-a-project"><a class="anchor" href="#use-webpack-in-a-project">&rarr;</a>Use webpack in a project</h2>
-<p>It’s the best to have webpack also as dependency in your project. Through this you can choose a local webpack version and will not be forced to use the single global one.</p>
-<p>Add a <code>package.json</code> configuration file for <code>npm</code> with:</p>
-<pre><code>$ npm init</code></pre><p>The answers to the questions are not so important if you don’t want to publish your project to npm.</p>
-<p>Install and add <code>webpack</code> to the <code>package.json</code> with:</p>
-<pre><code>$ npm install webpack --save-dev</code></pre><h2 id="versions"><a class="anchor" href="#versions">&rarr;</a>Versions</h2>
-<p>There are two versions of webpack available. The stable one and a beta version. The beta version is marked with a <code>-beta</code> in the version string. The beta version may contain fragile changes or experimental features and is less tested. See <a href="changelog.html">changelog</a> for differences. For serious stuff you should use the stable version:</p>
-<pre><code>$ npm install webpack@1.2.x --save-dev</code></pre><h2 id="dev-tools"><a class="anchor" href="#dev-tools">&rarr;</a>Dev Tools</h2>
-<p>If you want to use dev tools you should install it:</p>
-<pre><code>$ npm install webpack-dev-server --save-dev</code></pre><h2 id="continue-reading"><a class="anchor" href="#continue-reading">&rarr;</a>Continue reading</h2>
-<p>You can continue reading <a href="usage.html">Usage</a>.</p>
+<p>通过 <code>npm</code> 安装 WebPack：</p>
+<pre><code>$ npm install webpack -g</code></pre><p>webpack 现在已经全局安装成功，并且在命令行中可以直接使用 <code>webpack</code> 命令。</p>
+<h2 id="webpack"><a class="anchor" href="#webpack">&rarr;</a>在项目中使用 WebPack</h2>
+<p>最好让webpack也作为你的项目中的依赖，这样你就可以选择一个本地的webpack版本，而不会被迫使用单一的全局版本。</p>
+<p>为<code>npm</code>添加一个 <code>package.json</code> 配置文件：</p>
+<pre><code>$ npm init</code></pre><p>如果你不想发布到 npm ，可忽略此问题</p>
+<p>在 <code>package.json</code> 中安装和添加 <code>webapck</code>:</p>
+<pre><code>$ npm install webpack --save-dev</code></pre><h2 id=""><a class="anchor" href="#">&rarr;</a>版本</h2>
+<p>有两个版本的 webpack 可用：一个稳定版和 beta 版本。</p>
+<ul>
+<li>beta版会在版本号中增加 <code>-beta</code> 字符串予以区分</li>
+<li>beta版包含无价值的变化或实验性的功能，且测试较少</li>
+<li>版本差异，请参阅<a href="changelog">更新日志</a></li>
+</ul>
+<p>对于正式的项目建议使用稳定版本：</p>
+<pre><code>$ npm install webpack@1.2.x --save-dev</code></pre><h2 id=""><a class="anchor" href="#">&rarr;</a>开发工具</h2>
+<p>如果你想使用开发工具，按照下面的方法进行安装：</p>
+<pre><code>$ npm install webpack-dev-server --save-dev</code></pre><h2 id=""><a class="anchor" href="#">&rarr;</a>继续阅读</h2>
+<p>您可以继续阅读 <a href="Usage">如何使用</a>。</p>
 
 						</div>
 					</div>
